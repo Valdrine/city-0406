@@ -26,13 +26,57 @@ body {
     margin: 0 auto;
 }
 
-.cards {
+.header {
     display: flex;
+    align-items: center;
+    height: 100px;
     gap: 30px;
+}
+
+.gnb {
+    display: flex;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.gnb li a {
+    display: block;
+    padding: 10px 26px;
+}
+
+.btn_login {
+    border: 1px solid orangered;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
 
 }
 
-.cards li {
+.btn_login:hover {
+    background-color: transparent;
+    color: orangered;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+
+.cards li:first-child {
+    flex: 1;
+}
+
+.cards li:last-child {
+    flex: 1;
+}
+
+.cards li .photo {
     height: 300px;
 }
 
@@ -42,5 +86,4 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
 
